@@ -1,0 +1,367 @@
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+
+
+
+/* header */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+header img {
+    height:40px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+header ul a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+header ul li a:hover {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+header ul li {
+    font-size: 20px;
+}
+
+
+/* hero section */
+
+.hero {
+    padding: 20px;
+}
+
+.hero .img-container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.hero .img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.hero .my-description {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #666666ea;
+
+}
+
+.hero .my-description h2 {
+    font-size: 32px;
+}
+
+.hero .my-description blockquote {
+    margin-top: 30px;
+}
+
+.hero .my-description p {
+    font-size: 20px;
+}
+
+.hero .my-quote {
+    border-left: 4px solid #000;
+    background-color: #eeeeee77;
+    font-style: italic;
+    color: #6c626d;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 30px 10px;
+    font-size: 20px;
+}
+
+/* about me */
+
+.about-me {
+    border-top: 1px solid lightgray;
+    padding-top: 50px;
+    padding: 20px;
+    color: #666666ea;
+}
+
+.about-me .about-me-container {
+    margin-bottom: 30px;
+}
+
+.about-me .about-me-container h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about-me .about-me-container .text {
+    font-size: 20px;
+}
+
+.certificates p {
+    font-size: 20px;
+}
+
+.certificates ul {
+    padding-left: 20px;
+}
+
+/* certificate-images */
+
+.image-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-container img {
+    width: 341px;
+    height: 400px;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-container .special {
+    border: 1px solid black;
+}
+
+.image-container img:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* contact btn */
+
+.contact-btn {
+    padding: 20px 40px;
+    background-color: #32373c;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+    border-radius: 30px;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-btn:hover {
+    background-color: #f52a50;
+}
+
+/* footer */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid lightgray;
+    font-family: sans-serif;
+}
+
+@media (min-width: 400px) {
+    .image-container {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+
+@media (min-width: 600px) {
+    header ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 700px) {
+
+    .hero {
+        display: flex;
+        gap: 20px;
+        height: fit-content;
+    }
+    .hero .img-container {
+        width: 400px;
+        height: 500px;
+        margin: 0;
+    }
+    
+    .hero .img-container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+
+
+@media (min-width: 800px) {
+    .image-container {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    .hero,  .about-me, .image-container{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    header img {
+        height: 50px;
+    }
+
+    .hero {
+        width: 80%;
+    }
+
+    .hero .img-container {
+        width: 600px;
+        height: 500px;
+    }
+
+    .certificates ul li {
+        font-size: 18px;
+    }
+
+    .image-container {
+        padding: 170px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+}
+
+@media (min-width: 1300px) {
+    .hero,  .about-me, .image-container{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .image-container {
+        justify-content: center;
+    }
+
+    .hero .img-container {
+        width: 1000px;
+        height: 550px;
+    }
+
+    .hero .my-description h2 {
+        font-size: 36px;
+    }
+    
+    .hero .my-description blockquote {
+        margin-top: 30px;
+        font-size: 24px;
+    }
+    
+    .hero .my-description p {
+        font-size: 24px;
+    }
+
+    .about-me .about-me-container h1 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    
+    .about-me .about-me-container .text {
+        font-size: 24px;
+    }
+    
+    .certificates p {
+        font-size: 24px;
+    }
+
+    .certificates ul li {
+        font-size: 24px;
+    }
+
+    .contact-btn {
+        padding: 26px 46px;
+        font-size: 24px;
+        border-radius: 40px;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+    
+
+}
+
+
+@media (min-width: 1600px) {
+    .hero,  .about-me{
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+
+    .hero .img-container {
+        width: 1000px;
+    }
+
+    header ul li {
+        font-size: 24px;
+    }
+
+}
+
+
+
+
+
+
+
