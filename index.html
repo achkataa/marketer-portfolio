@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,36 +8,25 @@
     <title>Avramov Digital</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
-    <!-- <script>
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', e => {
-                e.preventDefault();
-
-                const sectionId = link.getAttribute('href');
-                const section = document.querySelector(sectionId);
-
-                section.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script> -->
+    <script src="https://kit.fontawesome.com/f50f339568.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="navBarHandler()">
     <header>
-        <img src="Images/Logo 2.png" alt="Logo" class="move-logo">
+        <img src="Images/logo.png" alt="Logo" class="move-logo">
         <nav>
-            <!-- <button class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button> -->
+            <div class="dropdown-content hidden">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Contact">Contact</a>
+            </div>
             <ul role="list" class="navbar-links">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
+            <i id="nav-icon" class="fa-solid fa-bars"></i>
         </nav>
     </header>
     <main>

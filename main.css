@@ -31,11 +31,46 @@ header img {
     height:40px;
 }
 
-header ul {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.hidden {
+    display: none;
 }
+
+.dropdown-content {
+    background-color: black;
+    position: absolute;
+    opacity: 0.8;
+    top: 80px;
+    left: 0px;
+    width: 100vw;
+    height: 17vh;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-content a.active {
+    text-decoration: underline white;
+}
+
+header ul {
+    display: none;
+}
+
+.nav-icon {
+    width: 40px;
+    height: 40px;
+}
+
 
 header ul a {
     color: black;
@@ -217,6 +252,17 @@ footer {
         flex-direction: row;
         gap: 30px;
     }
+
+    #nav-icon {
+        display: none;
+    }
+
+    .active {
+        background-color: #f2f2f2;
+        border-radius: 10px;
+    }
+
+    
 }
 
 @media (min-width: 700px) {
@@ -228,7 +274,7 @@ footer {
     }
     .hero .img-container {
         width: 400px;
-        height: 500px;
+        height: 400px;
         margin: 0;
     }
     
@@ -251,15 +297,11 @@ footer {
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1170px) {
 
     .hero,  .about-me, .image-container{
         padding-left: 100px;
         padding-right: 100px;
-    }
-
-    header img {
-        height: 50px;
     }
 
     .hero {
@@ -267,8 +309,8 @@ footer {
     }
 
     .hero .img-container {
-        width: 600px;
-        height: 500px;
+        width: 400px;
+        height: 360px;
     }
 
     .certificates ul li {
@@ -294,8 +336,8 @@ footer {
     }
 
     .hero .img-container {
-        width: 1000px;
-        height: 550px;
+        width: 800px;
+        height: 500px;
     }
 
     .hero .my-description h2 {
